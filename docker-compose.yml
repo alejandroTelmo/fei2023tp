@@ -23,3 +23,17 @@ services:
       - 80:80   
     depends_on:
       - db  
+
+  backend:
+        image: yiisoftware/yii2-php:7.1-apache
+        volumes: 
+            - ./backend/composer/cache:/root/.composer/cache
+            - ./backend/basic:/app
+        environment: 
+            DB_DATABASE: "${DATABASE_NAME}"
+            DB_PASSWORD: "${DATABASE_PASS}"
+            DB_USER: "${DATABASE_USER}"
+            DB_HOST: "${DATABASE_HOST}"
+        ports: 
+            - 8000:80
+    
