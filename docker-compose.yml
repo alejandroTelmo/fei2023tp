@@ -33,7 +33,7 @@ services:
             DB_DATABASE: "${DATABASE_NAME}"
             DB_PASSWORD: "${DATABASE_PASS}"
             DB_USER: "${DATABASE_USER}"
-            DB_HOST: "${DATABASE_HOST}"
+            DB_HOST: "${DATABASE_HOST}"            
         ports: 
             - 8000:80
     
