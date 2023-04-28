@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "7a5bbc8d-69f6-4a36-bb7e-28e0afac30b0",
+		"name": "cesarpractico1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13626191"
+	},
+	"item": [
+		{
+			"name": "carrera",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/apiv1/carrera",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"carrera"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\":\"Desarrollador web\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/apiv1/carrera",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"carrera"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "profesor",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/apiv1/profesor",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"profesor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\":\"cesar\",\n    \"apellido\":\"meloni\",\n    \"mostrar\":\"si\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/apiv1/profesor",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"profesor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "materia",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/apiv1/materia",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"materia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\":\"Informatica 1\",\n    \"cant_alumnos\": 5,\n     \"id_carrera\":1,\n      \"id_profesor\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/apiv1/materia",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"materia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/apiv1/materia/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"materia",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "aula",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/apiv1/aula",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"aula"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"descripcion\":\"magna\",\n    \"ubicacion\":\"ala este\",\n    \"cant_proyector\":1,\n    \"aforo\":60,\n    \"es_climatizada\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/apiv1/aula",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"aula"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reservaaula",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/apiv1/reservaaula",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"reservaaula"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_aula\":1,\n    \"fh_desde\":\"2023-05-03 20:00:00\",\n    \"fh_hasta\":\"2023-05-03 21:00:00\",\n    \"observacion\":\"ninguna\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/apiv1/reservaaula",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"reservaaula"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "horariomateria",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/apiv1/horariomateria",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"horariomateria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_materia\": 3,\n    \"id_reserva\": 1,\n    \"fh_desde\": \"2023-05-03 20:00:00\",\n    \"fh_hasta\": \"2023-05-03 21:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/apiv1/horariomateria",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"apiv1",
+								"horariomateria"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
